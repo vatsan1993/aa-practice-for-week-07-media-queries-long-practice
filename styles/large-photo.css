@@ -19,3 +19,9 @@ a.backButton {
 }
 
 /* Your code here */
+
+@media (max-height: 640px) {
+    header.homepage {
+        height: 220px;
+    }
+}
