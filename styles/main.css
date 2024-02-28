@@ -53,3 +53,8 @@ nav a.selected {
 }
 
 /* Your code here */
+@media print {
+    nav{
+        display: none;
+    }
+}
