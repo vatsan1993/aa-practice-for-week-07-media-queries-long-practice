@@ -57,16 +57,25 @@ nav a.selected {
     nav{
         display: none;
     }
-}
 
+    img{
+        width: 100%;
+    }
+    header{
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: white;
+    }
+    .notPrinted{
+        display: none;
+    }
+}
 
 @media (max-height: 640px) {
     header.homepage {
         height: 220px;
     }
 }
-
-
 
 @media only screen and (min-width: 600px) {
     a {
@@ -75,5 +84,4 @@ nav a.selected {
     a:hover {
         text-decoration: underline;
     }
-
 }

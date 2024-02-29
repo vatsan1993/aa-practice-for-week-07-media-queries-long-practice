@@ -24,3 +24,16 @@
 }
 
 /* Your code here */
+
+@media print {
+    .photo-card {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-card h3{
+        order:1;
+    }
+
+
+}
