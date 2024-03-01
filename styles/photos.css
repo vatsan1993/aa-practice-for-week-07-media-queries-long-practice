@@ -24,8 +24,8 @@
 }
 
 /* Your code here */
-
-@media print {
+/* Phase 4   */
+/* @media print {
     .photo-card {
         background-color: white;
         display: flex;
@@ -35,9 +35,9 @@
         order:1;
     }
 }
+ */
 
-
-@media screen and (min-width: 600px) {
+@media print, screen and (min-width: 600px) {
     .photo-card{
         text-align: left;
     }
@@ -46,6 +46,12 @@
     }
     .photo-card .content p{
         margin: 10px;
+    }
+}
+
+@media print{
+    .title2{
+        margin-top: 250px;
     }
 }
 
