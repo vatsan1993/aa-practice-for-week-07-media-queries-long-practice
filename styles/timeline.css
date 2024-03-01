@@ -85,3 +85,28 @@
 }
 
 /* Your code here */
+
+@media print {
+    .timeline{
+        min-width: 0;
+
+    }
+    .timeline-labels{
+        min-width: 0;
+
+    }
+
+    .timeline-labels .left ,
+    .timeline-labels .item1 ,
+    .timeline-labels .item2 ,
+    .timeline-labels .item3 ,
+    .timeline-labels .item4 ,
+    .timeline-labels .right ,
+    .timeline .era1 ,
+    .timeline .era2 ,
+    .timeline .era3 ,
+    .timeline .era4 ,
+    .timeline .era5 {
+        flex-basis: auto;
+    }
+}
