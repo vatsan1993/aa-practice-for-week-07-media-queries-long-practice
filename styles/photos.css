@@ -70,22 +70,48 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
-    .photo-card{
-        text-align: center;
-        display: inline-block;
-        width: 38%;
-        min-height: 350px;
+    body {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "header header"
+                            "nav nav"
+                            "title1 title1"
+                            "card1 card2"
+                            "title2 title2"
+                            "card3 .";
 
     }
+    header{
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+    .title1{
+        grid-area: title1;
+    }
+    .title2 {
+        grid-area: title2;
+    }
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .photo-card{
+        text-align: center;
+        width: unset;
+    }
     .photo-card .content{
-        width: 100%;
+
         display: flex ;
         flex-direction: row;
 
     }
     .photo-card .content img{
-
+        flex-basis: 400px;
     }
     .photo-card .content p{
         margin: 10px;
